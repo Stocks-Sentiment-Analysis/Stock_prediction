@@ -1,9 +1,6 @@
 import praw
 
-username = 'No_Hall_664'
-password = 'aman06062003'
-client_id = 'tghQei_hJGceWu0dnzTfWg'
-client_secret = 'Gpomlr4ozb362AHzi4zYC93KwQSmhg'
+
 
 reddit_instance = praw.Reddit(
     client_id = client_id,
