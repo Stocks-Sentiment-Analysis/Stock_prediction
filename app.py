@@ -30,6 +30,8 @@ def  get_sentiment(data):
 
     # Save the DataFrame with the new column back to CSV
     data.to_csv('output_file.csv', index=False)
+
+    
     return data
 
 if __name__ == '__main__':

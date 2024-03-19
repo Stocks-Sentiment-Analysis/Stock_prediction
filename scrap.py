@@ -2,14 +2,14 @@ from reddit_bot import reddit_instance
 import praw
 import pandas as pd
 
-def Scrape(subreddit='stocks'):
+def Scrape(subreddit="IndianStockMarket", time = 'month'):
 
-    subreddit = reddit_instance.subreddit("IndianStockMarket")
-    print(subreddit)
+    subreddit = reddit_instance.subreddit(subreddit)
 
-    top_25_sub = subreddit.top(time_filter='week')
+    top_sub = subreddit.top(time_filter= time )
     data = []
-    for sub in top_25_sub:
+
+    for sub in top_sub:
         print(sub.title)
         print(sub.selftext)
         sub
