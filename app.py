@@ -35,7 +35,7 @@ def  get_sentiment(data):
     return data
 
 if __name__ == '__main__':
-    setup()
+    # setup()
     data, dataset = Scrape()
     output = get_sentiment(data)
     
